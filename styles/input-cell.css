@@ -1,0 +1,27 @@
+#input-cell {
+  grid-area: input;
+  margin: 32px 0 0 16px;
+}
+
+#input-cell > label {
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+}
+
+#clean-text {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#clean-btn {
+    background-color: #FFA6D5;
+}
+
+#clean-btn-div button:hover {
+    transition: 0.25s;
+    background-color: #e998c3;
+}
+
+.fa-eraser {
+    color: white;
+}

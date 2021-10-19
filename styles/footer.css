@@ -1,0 +1,76 @@
+#ft-wrapper-center{
+  grid-area: ft-center;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "txt"
+  "mail-img";
+  place-items: flex-end center;
+  border: solid 2px transparent;
+  border-radius: 24px;
+  transition: 0.75s;
+  margin: 0 16px 16px 16px;
+}
+
+#ft-wrapper-center-txt-div {
+  grid-area: txt;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#ft-wrapper-center-txt {
+  display: block;
+  margin:0;
+  text-align: center;
+  color: transparent;
+  transition: 0.75s;
+  line-height: 1.5;
+}
+
+.fa-envelope {
+  grid-area: mail-img;
+  filter: opacity(0.5);
+  color: white;
+  border: solid 3px white;
+  border-radius: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  transition: 0.5s;
+}
+
+.fa-envelope:hover {
+  filter: opacity(1);
+  transform: scale(1.5) translateY(-4px);
+  cursor: pointer;
+}
+
+#ft-wrapper-left {
+  grid-area: ft-left;
+  align-self: flex-end;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 8px 8px;
+}
+  
+#link {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s all;
+}
+  
+#link:hover {
+  color: rgba(0,64,117,1);
+}
+
+#ft-wrapper-right {
+  grid-area: ft-right;
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: white;
+  font-size: 12px;
+  font-family: monospace;
+  margin: 0 8px 8px 0;
+  cursor: help;
+}

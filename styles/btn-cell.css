@@ -1,0 +1,122 @@
+#btn-cell {
+  grid-area: btn;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+#mid-row {
+  grid-row: 2 / 3;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#iron-btn {
+  width: 240px;
+  padding: 24px 0;
+  font-size: 24px;
+  letter-spacing: 4px;
+  border-radius: 64px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #c4c4c4;
+  border: solid black 4px;
+  transition: 1s;
+  margin-bottom: 8px;
+}
+  
+#iron-btn:hover {
+  filter: brightness(70%);
+  transition: 0.25s;
+}
+
+#iron-btn:active {
+  animation: heat 3s forwards;
+}
+
+@keyframes heat {
+  100% {
+    background-color: rgba(186, 117, 117, 1);
+    border: solid white 4px;
+    color: white;
+  }
+}
+
+#smooth-btn {
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #c4c4c4;
+  letter-spacing: 2px;
+  padding: 16px;
+  font-size: 16px;
+  border: solid black 4px;
+  transition: 1s;
+  margin-top: 8px;
+}
+
+#smooth-btn:hover {
+  filter: brightness(70%);
+  transition: 0.25s;
+}
+
+.fa-circle-question {
+  filter: opacity(0.5);
+  transition: 0.5s;
+  color: white;
+  margin: 16px 0;
+}
+
+.fa-circle-question:hover {
+  transform: scale(1.25);
+  filter: opacity(1);
+  cursor: help;
+  transition: 0.5;
+}
+
+.expl-divs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  font-size: 12px;
+  transition: 1s all;
+  border-radius: 16px;
+  border: solid 2px transparent;
+}
+
+.inner-expl-divs {
+  margin: 8px;
+  padding: 8px 0 0 8px;
+  border-left: solid 1px transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: transparent;
+  transition: 1s all;
+}
+
+.inner-expl-divs h3 {
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.inner-expl-divs li {
+  padding-top: 4px;
+}
+
+.fa-circle-info {
+  margin: auto 8px auto 16px;
+  color: transparent;
+  transition: 0.75s;
+}
+  
+#expl-div-top {
+  border-color: transparent;
+}
+  
+#expl-div-bottom {
+  border-color: transparent;
+}

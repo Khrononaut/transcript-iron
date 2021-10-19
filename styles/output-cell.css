@@ -1,0 +1,28 @@
+#output-cell {
+    grid-area: output;
+    margin: 32px 16px 0 0;
+}
+
+#output-cell > label {
+    text-decoration-line: overline;
+    text-decoration-style: solid;
+}
+  
+
+#copy-text {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#copy-btn {
+    background-color: #FC8621;
+}
+
+#copy-btn-div button:hover {
+    transition: 0.25s;
+    background-color: #e97d1f;
+}
+
+.fa-copy {
+    color: white;
+}

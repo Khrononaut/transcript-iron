@@ -1,0 +1,24 @@
+@import url(first-row.css);
+@import url(input-cell.css);
+@import url(btn-cell.css);
+@import url(output-cell.css);
+@import url(footer.css);
+
+
+body {
+  display: grid;
+  grid-template-rows: 70vh 27.5vh;
+  grid-template-columns: 1.75fr 1fr 1.75fr;
+  grid-template-areas:
+  "input btn output"
+  "ft-left ft-center ft-right";
+  row-gap: 2.5vh;
+  column-gap: 16px;
+  background: rgba(0,64,117,0.7);
+  font-family: sans-serif;
+  margin: 0;
+}
+  
+button:hover {
+  cursor: pointer;
+}
