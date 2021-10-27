@@ -1,6 +1,10 @@
 #input-cell {
   grid-area: input;
   margin: 32px 0 0 16px;
+  background-color: var(--clr-input);
+}
+
+#input-cell > textarea {
 }
 
 #input-cell > label {
@@ -8,20 +12,17 @@
     text-decoration-style: wavy;
 }
 
+#input-cell .counter-div {
+    background-color: var(--clr-input-counter);
+}
+
 #clean-text {
     font-weight: bold;
     margin-right: 8px;
+    transition: all .25s;
 }
 
 #clean-btn {
-    background-color: #FFA6D5;
-}
-
-#clean-btn-div button:hover {
-    transition: 0.25s;
-    background-color: #e998c3;
-}
-
-.fa-eraser {
-    color: white;
+    background-color:var(--clr-clean-btn);
+    transition: all .25s;
 }

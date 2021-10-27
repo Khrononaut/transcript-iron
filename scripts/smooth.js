@@ -34,4 +34,7 @@ function smooth() {
       string += arr[i] ; 
     }
     document.getElementById("output").innerHTML = string;
+    if (text !== "") {
+      textBtnDivs[1].style.filter = "opacity(1)";
+    }
   }

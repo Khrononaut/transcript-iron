@@ -4,17 +4,34 @@
 @import url(output-cell.css);
 @import url(footer.css);
 
+:root {
+  --clr-background: #30475E;
+  --clr-txa: #222831;
+  --clr-txa-txt: #E7D9EA;
+  --clr-lbl: white;
+  --clr-input: rgba(255, 70, 70, .6);
+  --clr-input-counter: #FF8585;
+  --clr-output: rgba(109, 203, 99, .6);
+  --clr-output-counter: #B1E693;
+  --clr-btn: #c4c4c4;
+  --clr-clean-btn: #e998c3;
+  --clr-copy-btn: #FC8621;
+  --clr-expl-1: rgba(255, 242, 56, .5);
+  --clr-expl-2: rgba(255, 103, 231, .5);
+}
+
 
 body {
+  width: 100%;
   display: grid;
-  grid-template-rows: 70vh 27.5vh;
+  grid-template-rows: 90vh 7.5vh;
   grid-template-columns: 1.75fr 1fr 1.75fr;
   grid-template-areas:
   "input btn output"
-  "ft-left ft-center ft-right";
+  "ft-left . ft-right";
   row-gap: 2.5vh;
   column-gap: 16px;
-  background: rgba(0,64,117,0.7);
+  background: var(--clr-background);
   font-family: sans-serif;
   margin: 0;
 }

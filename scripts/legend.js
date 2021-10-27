@@ -10,25 +10,25 @@ let circleInfos = document.querySelectorAll(".fa-circle-info");
 
 function showInfo() {
   for (let i = 0; i < innerExplDivs.length; i++) {
-    innerExplDivs[i].style.color = "white";
-    innerExplDivs[i].style.borderLeft = "solid 1px white";
-    circleInfos[i].style.color = "white";
+    innerExplDivs[i].style.color = "black";
+    innerExplDivs[i].style.borderLeft = "solid 2px black";
+    circleInfos[i].style.color = "black";
   }
-  ironBtn.style.backgroundColor = "#38A3A5";
-  smoothBtn.style.backgroundColor = "#57CC99";
+  ironBtn.style.backgroundColor = "var(--clr-expl-1)";
+  smoothBtn.style.backgroundColor = "var(--clr-expl-2)";
 
 
-  explDivTop.style.backgroundColor = "rgba(6, 163, 165, 0.5)";
-  explDivTop.style.borderColor = "white";
-  explDivBottom.style.backgroundColor = "rgba(87, 204, 153, 0.5)";
-  explDivBottom.style.borderColor = "white";
+  explDivTop.style.backgroundColor = "var(--clr-expl-1)";
+  explDivTop.style.borderColor = "black";
+  explDivBottom.style.backgroundColor = "var(--clr-expl-2)";
+  explDivBottom.style.borderColor = "black";
   
 }
 
 function hideInfo() {
   for (let i = 0; i < innerExplDivs.length; i++) {
     innerExplDivs[i].style.color = "transparent";
-    innerExplDivs[i].style.borderLeft = "solid 1px transparent";
+    innerExplDivs[i].style.borderLeft = "solid 2px transparent";
     circleInfos[i].style.color = "transparent";
   }
   ironBtn.style.backgroundColor = "#c4c4c4";

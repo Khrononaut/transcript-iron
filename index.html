@@ -4,18 +4,26 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-
     <div id="input-cell" class="text-div">
       <label for="input">zerknittert</label>
       <textarea id="input" rows=15 cols=40 placeholder="unverarbeiteter Text"></textarea>
-      <div id="clean-btn-div" class="text-btn-div transition025">
-        <div class="span-div">
-          <span>Text&nbsp;</span>
-          <span id="clean-text" class="transition025">entfernen</span>
+      <div class="text-div-bottom-row">
+        <div class="counter-div">
+          <div class="metrics-div">
+            <i class="fa-solid fa-gauge-simple"></i>
+            <h3>Messung</h3>
+          </div>
+          <p>Das Input-Feld enthält <span id="char-counter-input">keine</span> Zeichen<span id=char-counter-amendment> (exklusive Satzzeichen)</span>.</p>
         </div>
-        <button class="text-btn-div-btn" id="clean-btn">
-          <i class="fa-solid fa-xl fa-eraser"></i>
-        </button>
+        <div id="clean-btn-div" class="text-btn-div">
+          <div class="span-div">
+            <span>Text&nbsp;</span>
+            <span id="clean-text">entfernen</span>
+          </div>
+          <button id="clean-btn" class="text-btn-div-btn">
+            <i class="fa-solid fa-xl fa-eraser"></i>
+          </button>
+        </div>
       </div>
     </div>
     
@@ -54,41 +62,45 @@
     
     <div id="output-cell" class="text-div">
       <label for="output">faltenfrei</label>
-      <textarea id="output" rows=15 cols=40 placeholder="verarbeiteter Text"></textarea>
-      <div id="copy-btn-div" class="text-btn-div transition025">
+      <textarea id="output" rows=15 cols=40 placeholder="verarbeiteter Text" readonly></textarea>
+      <div class="text-div-bottom-row">
+        <div class="counter-div">
+          <div class="metrics-div">
+            <i class="fa-solid fa-gauge-simple"></i>
+            <h3>Messung</h3>
+          </div>
+          <p>Du hast 
+            <ul>
+              <li><span id="blank-line-counter">keine</span> Leerzeile<span id="small-n">n</span></li>
+              <li><span id="u-counter">keine</span> „uh“ bzw. „um“</li>
+            </ul>
+            weggebügelt.</p>
+        </div>
+      <div id="copy-btn-div" class="text-btn-div">
         <div class="span-div">
           <span>Text&nbsp;</span>
-          <span id="copy-text" class="transition025">kopieren</span>
+          <span id="copy-text">kopieren</span>
         </div>
         <button id="copy-btn" class="text-btn-div-btn">
           <i class="fa-solid fa-xl fa-copy"></i>
         </button>
       </div>
     </div>
+    </div>
 
     <div id="ft-wrapper-left">
       <span>für <strong><a id="link" target="_blank" href="https://wortwert.de">wortwert</a></strong></span>
     </div>
-
-    <div id="ft-wrapper-center">
-      <div id="ft-wrapper-center-txt-div">
-        <p id="ft-wrapper-center-txt">Du hast <strong>Kritik, Wünsche oder Anregungen</strong>?
-          <br>
-        Schreib' mir gern eine Mail!</p>
-      </div>
-      <i class="fa-regular fa-solid fa-envelope"></i>
-    </div>
-    
+  
     <div id="ft-wrapper-right" title="Zuletzt bearbeitet am:">
-      <time id="time" datetime="2021-10-19 13:05">19. Oktober 2021</time>
+      <time id="time" datetime="2021-10-27 10:03">27. Oktober 2021</time>
       <i class="fa-solid fa-xs fa-pen-to-square"></i>
     </div>
-
+    
     <script src="./scripts/text-div-btns.js"></script>
     <script src="./scripts/colouring-btns.js"></script>
     <script src="./scripts/legend.js"></script>
     <script src="./scripts/iron.js"></script>
-    <script src="./scripts/mail-me.js"></script>
     <script src="./scripts/smooth.js"></script>
     <script src="https://kit.fontawesome.com/2277de3183.js" crossorigin="anonymous"></script>
   </body>

@@ -50,18 +50,69 @@
   align-self: flex-end;
   font-size: 16px;
   text-transform: uppercase;
-  color: white;
-  margin: 0 0 8px 8px;
+  color: lightgray;
+  margin: 0 0 8px 10px;
+  transition: all 0.25s;
 }
-  
+
 #link {
   text-decoration: none;
-  color: white;
-  transition: 0.5s all;
+  display: inline-block;
+  width: 120px;
+  padding-left: 4px;
+  border-bottom: 4px solid transparent;
+  color: lightgray;
+  transition: .25s all;
 }
   
 #link:hover {
-  color: rgba(0,64,117,1);
+  color: white;
+  animation: slide .25s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  10% {
+    width: 10px;
+    border-color: white;
+  }
+  20% {
+    width: 20px;
+    border-color: white;
+  }
+  30% {
+    width: 30px;
+    border-color: white;
+  }
+  40% {
+    width: 40px;
+    border-color: white;
+  }
+  50% {
+    width: 50px;
+    border-color: white;
+  }
+  60% {
+    width: 60px;
+    border-color: white;
+  }
+  70% {
+    width: 70px;
+    border-color: white;
+  }
+  80% {
+    width: 80px;
+    border-color: white;
+  }
+  90% {
+    width: 90px;
+    border-color: white;
+  }
+  100% {
+    width: 100px;
+    border-color: white;
+  }
 }
 
 #ft-wrapper-right {

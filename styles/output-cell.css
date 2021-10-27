@@ -1,13 +1,17 @@
 #output-cell {
     grid-area: output;
     margin: 32px 16px 0 0;
+    background-color: var(--clr-output);
 }
 
 #output-cell > label {
     text-decoration-line: overline;
     text-decoration-style: solid;
 }
-  
+
+#output-cell .counter-div {
+    background-color: var(--clr-output-counter);
+}
 
 #copy-text {
     font-weight: bold;
@@ -15,14 +19,5 @@
 }
 
 #copy-btn {
-    background-color: #FC8621;
-}
-
-#copy-btn-div button:hover {
-    transition: 0.25s;
-    background-color: #e97d1f;
-}
-
-.fa-copy {
-    color: white;
+    background-color: var(--clr-copy-btn);
 }
