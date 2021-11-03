@@ -33,8 +33,10 @@ function iron() {
       }
       
       // capitalise "i"
-      if (arr[i] == "i" && arr[i-1] == " " && arr[i+1] == " ") {
-        arr[i] = arr[i].toUpperCase();
+      if (arr[i] === "i" && arr[i-1] === " ") {
+        if (arr[i+1] === " " || (arr[i+1] === "'" && arr[i+2] === "m" && arr[i+3] === " ")) {
+          arr[i] = arr[i].toUpperCase();
+        }
       }
       
       // remove "uh" and "um"
